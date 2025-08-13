@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Cormorant+Garamond:wght@600&display=swap');
+
+.admin-booking-management {
+  background-color: #1a1a1a;
+  color: #fff;
+  min-height: 100vh;
+  padding: 40px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.page-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  color: #e50914;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.booking-card {
+  background-color: #2c2c2c;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 10px rgba(229, 9, 20, 0.3);
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #e50914;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.table-container {
+  overflow-x: auto;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.booking-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #eee;
+}
+
+.booking-table th {
+  position: sticky;
+  top: 0;
+  background-color: #3a3a3a;
+  color: #e3e3e3;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  z-index: 2;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.booking-table tr:hover {
+  background-color: #333;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.status-badge.confirmed {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.status-badge.advance-paid,
+.status-badge.pending {
+  background-color: #ffc107;
+  color: #222;
+}
+
+.status-badge.denied {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 0.9rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.btn.confirm {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn.confirm:hover {
+  background-color: #218838;
+}
+
+.btn.deny {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.btn.deny:hover {
+  background-color: #c82333;
+}
+
+.loading-msg,
+.error-msg,
+.success-msg,
+.empty-msg {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.loading-msg {
+  color: #ccc;
+}
+
+.error-msg {
+  color: #dc3545;
+}
+
+.success-msg {
+  color: #28a745;
+}
+
+.empty-msg {
+  color: #aaa;
+}

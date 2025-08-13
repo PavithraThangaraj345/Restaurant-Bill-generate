@@ -1,0 +1,131 @@
+/* billing.css - Tailwind Customization */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Cormorant+Garamond:wght@600&display=swap');
+
+.billing-page {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  color: #f4f4f4;
+  padding: 2rem;
+}
+
+.billing-header {
+  font-family: 'Cormorant Garamond', serif;
+  color: #ff4d4d;
+  font-weight: 800;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.form-section,
+.table-section {
+  background-color: #2c2c2c;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  margin-bottom: 2rem;
+}
+
+.form-section h2,
+.table-section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.75rem;
+  color: #ff6666;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+input,
+textarea,
+select {
+  background-color: #3b3b3b;
+  border: 1px solid #555;
+  border-radius: 8px;
+  color: #fff;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #ff4d4d;
+  box-shadow: 0 0 0 3px rgba(255, 77, 77, 0.3);
+}
+
+button {
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-family: 'Open Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  max-height: 70vh;
+  border-radius: 10px;
+  border: 1px solid #444;
+}
+
+/* Table and sticky header */
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  font-family: 'Open Sans', sans-serif;
+  min-width: 800px;
+}
+
+.table-wrapper th,
+.table-wrapper td {
+  padding: 1rem;
+  border-bottom: 1px solid #444;
+  text-align: left;
+}
+
+.table-wrapper th {
+  position: sticky;
+  top: 0;
+  background-color: #2f2f2f;
+  z-index: 2;
+  color: #ff9999;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.table-wrapper tr:hover {
+  background-color: #3a3a3a;
+}
+
+.print-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+  background-color: #0056b3;
+}
